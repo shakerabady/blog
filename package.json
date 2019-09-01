@@ -1,0 +1,26 @@
+{
+  "name": "freedomWriterz",
+  "version": "1.0.0",
+  "description": "MERN stack app, blog where users can register and post artciles and look at articles, also there's admin page which can allow accept an article or refues or delete a post or a user.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node": "node server.js",
+    "server": "nodemon server.js",
+    "react": "cd ./view && npm run-script start",
+    "start": "concurrently \"npm run server\" \"npm run react\""
+  },
+  "author": "Abdullah Alsqoor, Shaker Al-Abady, Mohammad Obidat, Emad Al-rashed, Ahamd Arrag, Mohammad Alfar",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "concurrently": "^4.1.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.9",
+    "node": "^12.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
