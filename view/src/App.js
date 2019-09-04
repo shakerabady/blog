@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Users from "./components/Users";
 import Contact from "./components/Contact";
 import NotFound from "./components/NotFound";
+import AdminLogin from "./components/admin/AdminLogin";
 
 class App extends Component {
   render() {

@@ -1,6 +1,7 @@
-const admin = require("../models/admins");
+const Admin = require("../models/admins");
 const express = require("express");
 const router = express.Router();
+
 
 // Illustration Example:
 // NOTE: use router object instead of app object here
@@ -21,6 +22,20 @@ router.get("/", async (req, res) => {
 
 */
 
-// write you routes (server API) here
+// write you routes (server API) here// async await approach
+router.post("/login", async (req, res) => {
+  console.log('req', req.body)
+  // const result = await mongo.getRepos();
+  
+  const cb = (result) => {
+    res.send(result)
+  }
+
+
+  Admin.getAll()
+  
+});
+
+
 
 module.exports = router;

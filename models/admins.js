@@ -12,6 +12,8 @@ const adminsSchema = new mongoose.Schema({
 let Admins = new mongoose.model("admins", adminsSchema);
 
 let getAll = cb => {
+
+  
   Admins.find({}, (err, data) => {
     if (err) {
       cb(err);

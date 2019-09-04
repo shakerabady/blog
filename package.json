@@ -1,4 +1,4 @@
-{
+ {
   "name": "freedomWriterz",
   "version": "1.0.0",
   "description": "MERN stack app, blog where users can register and post artciles and look at articles, also there's admin page which can allow accept an article or refues or delete a post or a user.",
